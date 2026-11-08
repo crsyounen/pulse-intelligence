@@ -1,0 +1,28 @@
+Pulse Intelligence local model
+Copyright 2026 crsyounen
+
+This repository's releases contain:
+
+1. model.gguf
+   Qwen3-0.6B by the Qwen team, Alibaba Cloud (https://huggingface.co/Qwen/Qwen3-0.6B),
+   licensed under the Apache License 2.0 (licenses/Qwen3-Apache-2.0.txt).
+   Copyright 2024 Alibaba Cloud.
+   Modified by us: converted to GGUF and quantized to Q4_K_M (with an importance
+   matrix) using llama.cpp b12180. The weights were not otherwise changed.
+
+2. brief-lora.gguf, reply-lora.gguf
+   LoRA adapters for Qwen3-0.6B, trained by crsyounen for Pulse Relay.
+   Licensed under the Apache License 2.0 (LICENSE).
+
+3. llama-b12180-macos-arm64.tar.gz, llama-b12180-win-x64-vulkan.zip
+   llama-server and the libraries it needs, taken from the official llama.cpp
+   release b12180 (https://github.com/ggml-org/llama.cpp). The binaries are
+   unmodified; the archives are repackaged by us (only the files llama-server
+   needs, all in the archive's top folder). llama.cpp is licensed under the MIT
+   License (licenses/llama.cpp-MIT.txt).
+   The Windows archive also contains:
+   - libomp.dll from the LLVM project (Apache License 2.0 with LLVM Exceptions,
+     licenses/LLVM-OpenMP.txt);
+   - MSVCP140.dll, VCRUNTIME140.dll and VCRUNTIME140_1.dll, the Microsoft Visual
+     C++ Redistributable runtime (14.44.35211), distributed under the
+     redistribution terms of the Microsoft Visual Studio license.
