@@ -10,7 +10,7 @@ This repository's releases contain:
    Modified by us: converted to GGUF and quantized to Q4_K_M (with an importance
    matrix) using llama.cpp b12180. The weights were not otherwise changed.
 
-2. brief-lora.gguf, reply-lora.gguf
+2. brief-lora.gguf, reply-lora.gguf, notes-lora.gguf
    LoRA adapters for Qwen3-0.6B, trained by crsyounen for Pulse Relay.
    Licensed under the Apache License 2.0 (LICENSE).
 
